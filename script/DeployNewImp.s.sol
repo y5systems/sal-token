@@ -10,9 +10,8 @@ contract DeployNewImp is Script {
         vm.startBroadcast();
 
         // Deploy the new implementation contract
-        SalToken newImp = new SalToken(0x26fdE4B9C41F9A233c368ea589060b05071c2Da7);
-        
+        SalToken newImp = new SalToken();
+
         console.log("New implementation deployed at:", address(newImp));
-        
     }
 }
